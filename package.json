@@ -1,16 +1,60 @@
 {
-  "name": "drogal-ui",
-  "version": "1.0.0",
+  "name": "@drogal/drogal-ui",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },  
+    "login": "npm login --registry=https://npm.pkg.github.com",
+    "release": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && standard-version && git push --follow-tags && npm publish",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --no-css-modules --format modern,cjs",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/build",
+    "storybook": "set NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 9001 -c .storyconfig",
+    "storybook_mac": "NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 9001 -c .storyconfig"
+  },
   "keywords": [],
   "author": "Drogal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Drogal/Drogal.UI/issues"
   },
-  "homepage": "https://github.com/Drogal/Drogal.UI#readme"
+  "homepage": "https://github.com/Drogal/Drogal.UI#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/drogal"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "axios": "^1.3.2",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-es2020": "^1.0.2",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "microbundle-crl": "^0.13.10",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.57.1",
+    "standard-version": "^9.5.0",
+    "storybook-css-modules": "^1.0.8",
+    "webpack": "5"
+  }
 }
