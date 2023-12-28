@@ -1,6 +1,6 @@
 {
   "name": "teste1-drogal-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -63,8 +63,7 @@
     "standard-version": "^9.5.0",
     "storybook-css-modules": "^1.0.8",
     "webpack": "5"
-    
-  },  
+  },
   "dependencies": {
     "@storybook/cli": "^7.6.6",
     "storybook": "^7.6.6",
