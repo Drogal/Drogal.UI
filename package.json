@@ -9,7 +9,7 @@
     "build-storybook": "storybook build",
     "login": "npm login --registry=https://npm.pkg.github.com",
     "release": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && standard-version && git push --follow-tags && npm publish",
-    "release2": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && standard-version && git push && npm publish",
+    "release2": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && version && git push && npm publish",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "build": "microbundle-crl --no-compress --no-css-modules --format modern,cjs"
   },
