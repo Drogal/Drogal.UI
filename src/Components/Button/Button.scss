@@ -1,36 +1,53 @@
-.custom-button {
+button{
+    :hover{
+        opacity: 10;      
+    }
+}
+
+.drogal-ui-button {
     width: 180px;
     height: 50px;
     border-radius: 25px;
     opacity: 1;    
     border: none;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-.custom-button:disabled {
+.drogal-ui-button:disabled {
     opacity: 0.5;
 }
 
-.custom-button-default {
+.drogal-ui-button-default {
     background: #3A9BC5 0% 0% no-repeat padding-box;
     color: #FFFFFF;
+    &:hover {
+        background: #2685ad 0% 0% no-repeat padding-box;
+        color: #fce4e4;    
+    }
 }
 
-.custom-button-success {
+.drogal-ui-button-success {
     background: #35A836 0% 0% no-repeat padding-box;
-    color: #FFFFFF;
+    color: #FFFFFF;    
+    &:hover {
+        background: #228b24 0% 0% no-repeat padding-box;
+        color: #f7eaea;    
+    }
 }
 
-.custom-button-danger {
+.drogal-ui-button-danger {
     background: #DC3545 0% 0% no-repeat padding-box;
     color: #FFFFFF;
+    &:hover {
+        background: #ce1628 0% 0% no-repeat padding-box;
+        color: #f7eaea;    
+    }
 }
 
-.custom-button-title {
-    width: 179px;
-    height: 22px;
+.drogal-ui-button-title {
     text-align: center;
     font-size: 22px;
     font-family: 'BwSeidoRound', sans-serif;
     letter-spacing: 0px;
+    cursor: pointer;    
 }

@@ -1,10 +1,18 @@
 import React from "react";
 import './Button.scss'
 
-const Button = ({title, onClick, disabled, setClass = "custom-button-default"}) => {
+const Button = ({
+    label, 
+    onClick, 
+    disabled, 
+    loading,
+    icon,
+    id,
+    className = "drogal-ui-button-default"
+}) => {
     return (
-        <button className={`custom-button ${setClass}`} onClick={onClick} disabled={disabled}>
-            <label className="custom-button-title">{title}</label>
+        <button className={`drogal-ui-button ${className}`} onClick={onClick} disabled={disabled}>
+            <label className="drogal-ui-button-title">{label}</label>
         </button>
     );
 }

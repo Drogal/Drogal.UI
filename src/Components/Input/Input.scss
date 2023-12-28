@@ -1,0 +1,65 @@
+.drogal-ui-input{  
+    width: 100%;    
+    background: #FBFBFB 0% 0% no-repeat padding-box;
+    border: 1px solid #848484;
+    border-radius: 22px;
+    opacity: 1;
+    outline: 0 none;        
+    color: #6D7A84;
+    padding-left: 15px;
+}
+
+.drogal-ui-input::placeholder {
+    color: #9E9E9E;
+}
+
+.drogal-ui-input-detail{
+    padding-left: 40px;
+    height: 44px;
+    font-size: 14px;
+}
+
+.drogal-ui-input-detail-no-padding{    
+    height: 44px;
+    font-size: 14px;
+}
+
+.drogal-ui-input-large-center {
+    height: 84px;
+    border-radius: 44px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.drogal-ui-input-small-center {
+    height: 44px;
+    text-align: center;
+}
+
+.commom-area-detail {    
+    height: 150px;
+    padding: 16px;
+    font-size: 14px;
+}
+
+.drogal-ui-input-error, .commom-area-error {
+    border: 1px solid #dc3545;
+}
+
+.input-icon {  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: #555;    
+    opacity: 1;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-error-message {
+    font-size: 12px;
+    color: #dc3545;
+}
