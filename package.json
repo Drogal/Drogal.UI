@@ -1,20 +1,83 @@
 {
-  "name": "drogal-ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "teste1-drogal-ui",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "release": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && standard-version && git push --follow-tags && npm publish",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --no-css-modules --format modern,cjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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:x-oauth-basic@github.com/Drogal/Drogal.UI.git"
-  },
-  "keywords": [],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "react",
+    "component"
+  ],
   "author": "Drogal",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Drogal/Drogal.UI/issues"
-  },
-  "homepage": "https://github.com/Drogal/Drogal.UI#readme"
+  "license": "MIT",
+  "description": "Biblioteca de componentes visuais | Rede Drogal",
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@storybook/addon-essentials": "7.6.6",
+    "@storybook/addon-interactions": "7.6.6",
+    "@storybook/addon-links": "7.6.6",
+    "@storybook/addon-onboarding": "1.0.10",
+    "@storybook/blocks": "7.6.6",
+    "@storybook/react": "7.6.6",
+    "@storybook/react-vite": "7.6.6",
+    "@storybook/test": "7.6.6",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@babel/preset-react": "^7.18.6",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "axios": "^1.3.2",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-es2020": "^1.0.2",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "microbundle-crl": "^0.13.10",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "sass": "^1.57.1",
+    "standard-version": "^9.5.0",
+    "storybook-css-modules": "^1.0.8",
+    "webpack": "5"
+    
+  },  
+  "dependencies": {
+    "@storybook/cli": "^7.6.6",
+    "storybook": "^7.6.6",
+    "vite": "^5.0.10",
+    "microbundle-crl": "^0.13.10",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@storybook/addon-actions": "^6.5.16",
+    "less": "^4.1.3",
+    "prop-types": "^15.8.1",
+    "react-router-dom": "6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.3.5"
+  }
 }

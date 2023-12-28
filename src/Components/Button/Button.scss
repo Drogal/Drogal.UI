@@ -1,0 +1,36 @@
+.custom-button {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    opacity: 1;    
+    border: none;
+    cursor: pointer;
+}
+
+.custom-button:disabled {
+    opacity: 0.5;
+}
+
+.custom-button-default {
+    background: #3A9BC5 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.custom-button-success {
+    background: #35A836 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.custom-button-danger {
+    background: #DC3545 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.custom-button-title {
+    width: 179px;
+    height: 22px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'BwSeidoRound', sans-serif;
+    letter-spacing: 0px;
+}
