@@ -1,6 +1,6 @@
 {
-  "name": "teste-drogal-ui",
-  "version": "1.0.2",
+  "name": "drogal-ui",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
