@@ -1,7 +1,7 @@
 import React from "react";
 import './Input.scss'
 
-const TextArea = ({
+export const TextArea = ({
     placeholder, 
     onChange, 
     value, 
@@ -15,7 +15,7 @@ const TextArea = ({
                 onChange={onChange}
                 value={value}
                 placeholder={placeholder}
-                className={`drogal-ui-input commom-area-detail ${ (displayError) ? "commom-area-error" : "" } ${className}`}
+                className={`drogal-ui-input drogal-ui-area-detail ${ (displayError) ? "drogal-ui-area-error" : "" } ${className}`}
             />
             {displayError && <div className="input-error-message">{errorMessage}</div>}
         </div>        
@@ -23,5 +23,3 @@ const TextArea = ({
 }
 
 export default TextArea
-
-
