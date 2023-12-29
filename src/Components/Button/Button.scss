@@ -1,0 +1,79 @@
+button{
+    :hover{
+        opacity: 10;      
+    }
+}
+
+.drogal-ui-button {
+    width: 180px;
+    // height: 50px;
+    border-radius: 25px;
+    opacity: 1;    
+    border: none;
+    cursor: pointer;    
+}
+
+.large{
+    width: 200px;
+    height: 70px;
+}
+
+.medium{
+    width: 180px;
+    height: 50px;
+}
+
+.small{
+    width: 150px;
+    height: 35px;
+}
+
+.drogal-ui-button:disabled {
+    opacity: 0.5;
+}
+
+.default {
+    background: #3A9BC5 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    &:hover {
+        background: #2685ad 0% 0% no-repeat padding-box;
+        color: #fce4e4;    
+    }
+}
+
+.success {
+    background: #35A836 0% 0% no-repeat padding-box;
+    color: #FFFFFF;    
+    &:hover {
+        background: #228b24 0% 0% no-repeat padding-box;
+        color: #f7eaea;    
+    }
+}
+
+.danger {
+    background: #DC3545 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    &:hover {
+        background: #ce1628 0% 0% no-repeat padding-box;
+        color: #f7eaea;    
+    }
+}
+
+.drogal-ui-button-title {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'BwSeidoRound', sans-serif;
+    letter-spacing: 0px;
+    cursor: pointer;    
+}
+ .title-large{
+    font-size: 26px;
+ }
+
+ .title-medium{
+    font-size: 22px;
+ }
+
+ .title-small{
+    font-size: 18px;
+ }
