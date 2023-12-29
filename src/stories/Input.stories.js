@@ -10,10 +10,10 @@ export default {
   tags: ['autodocs']
 };
 
-export const TypeDefault = {
+export const Default = {
   args: {    
     icon:User,
-    placeholder:"Usuários",
+    placeholder:"Usuário",
     displayError: true,
     errorMessage:"*Campo obrigatório"
   },

@@ -11,6 +11,6 @@ export const DisplayIcon = ({icon}) =>{
 export const HandleClassName = (icon, setClass, displayError) =>{
 
   let _className = ((icon === undefined) && (setClass==="drogal-ui-input-detail"))? setClass + "-no-padding" : setClass
-  return `drogal-ui-input ${_className} ${ (displayError) ? "drogal-ui-input-error" : "" }`
+  return `drogal-ui-input-detail drogal-ui-input ${_className} ${ (displayError) ? "drogal-ui-input-error" : "" }`
 }
   

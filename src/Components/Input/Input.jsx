@@ -9,7 +9,7 @@ export const Input = ({
     value, 
     displayError, 
     errorMessage, 
-    className="drogal-ui-input-detail"
+    className
 }) =>{
     
     return (
