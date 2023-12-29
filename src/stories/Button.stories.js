@@ -1,45 +1,38 @@
-import { Button } from './Button';
+import { Button } from '../Components/Button/Button';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+
 export default {
   title: 'Example/Button',
   component: Button,
-  parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
+  parameters: {    
     layout: 'centered',
-  },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
+  },  
+  tags: ['autodocs']
+};
+
+export const TypeDefault = {
+  args: {    
+    type:"default",
+    label: 'Default',
+    disabled: false, 
+    size: 'medium'
   },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const TypeSuccess = {
   args: {
-    primary: true,
-    label: 'Button',
+    type:"success",
+    label: 'Sucess',
+    disabled:false,
+    size: 'medium' 
   },
 };
 
-export const Secondary = {
+export const TypeDanger = {
   args: {
-    label: 'Button',
-  },
-};
-
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
-
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
+    type:"danger",
+    label: 'Danger',
+    disabled:false,
+    size: 'medium' 
   },
 };
