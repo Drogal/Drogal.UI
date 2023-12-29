@@ -5,7 +5,7 @@
   "module": "dist/index.modern.js",
   "source": "src/index.js",
   "scripts": {
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 -- --no-manager-cache --no-registry-cache",
     "build-storybook": "storybook build",
     "login": "npm login npm config set scope=@rededrogal",    
     "release": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && git push && npm publish --access public",

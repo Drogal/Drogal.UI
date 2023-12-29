@@ -2,7 +2,7 @@ import React from "react";
 import './Input.scss';
 import { DisplayIcon, HandleClassName } from './InputUtils';
 
-const Input = ({
+export const Input = ({
     icon, 
     placeholder, 
     onChange, 
