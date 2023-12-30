@@ -1,6 +1,6 @@
 # Drogal UI
 
-Drogal UI is a library of user interface components for React from Drogal, Pharmacy Network. See the [Drogal](https://www.drogal.com.br/) home page.
+Drogal UI is a library of user interface components from React from Drogal, Pharmacy Network. See the [Drogal](https://www.drogal.com.br/) home page.
 
 ## Installation
 
