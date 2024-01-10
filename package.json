@@ -1,6 +1,6 @@
 {
-  "name": "teste2-drogal-ui",
-  "version": "1.0.1",
+  "name": "drogal-ui",
+  "version": "1.0.7",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -10,8 +10,8 @@
     "login_old": "npm login npm config set scope=@rededrogal",
     "login": "npm login",
     "release_patch": "npm version patch && microbundle-crl --no-compress --no-css-modules --format modern,cjs && npm publish --access public",
-    "release_minor": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && version minor && git add * && git commit -m '...' && git push && npm publish --access public",
-    "release_major": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && version major && git add * && git commit -m '...' && git push && npm publish --access public",
+    "release_minor": "npm version minor && microbundle-crl --no-compress --no-css-modules --format modern,cjs && npm publish --access public",
+    "release_major": "npm version major && microbundle-crl --no-compress --no-css-modules --format modern,cjs && npm publish --access public",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "build": "microbundle-crl --no-compress --no-css-modules --format modern,cjs",
     "old": "microbundle-crl --no-compress --no-css-modules --format modern,cjs && standard-version && git push --follow-tags && npm publish"
