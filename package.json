@@ -1,9 +1,9 @@
 {
   "name": "drogal-ui",
   "version": "1.0.10",
-  "main": "dist/index.js",
+  "main": "dist/index.tsx",
   "module": "dist/index.modern.js",
-  "source": "src/index.jsx",
+  "source": "src/index.tsx",
   "scripts": {
     "storybook": "storybook dev -p 6006 -- --no-manager-cache --no-registry-cache",
     "build-storybook": "storybook build",
