@@ -1,6 +1,5 @@
 import { Button } from '../Components/Button/Button';
 
-
 export default {
   title: 'Example/Button',
   component: Button,
@@ -13,9 +12,12 @@ export default {
 export const TypeDefault = {
   args: {    
     type:"default",
-    label: 'Default',
+    label: 'default label',
     disabled: false, 
-    size: 'medium'
+    size: 'medium',
+    onClick: () => {
+      alert('Button clicked!');
+    }
   },
 };
 
@@ -24,7 +26,10 @@ export const TypeSuccess = {
     type:"success",
     label: 'Sucess',
     disabled:false,
-    size: 'medium' 
+    size: 'medium',
+    onClick: () => {
+      alert('Button clicked!');
+    }
   },
 };
 
@@ -33,6 +38,9 @@ export const TypeDanger = {
     type:"danger",
     label: 'Danger',
     disabled:false,
-    size: 'medium' 
+    size: 'medium',
+    onClick: () => {
+      alert('Button clicked!');
+    }
   },
 };
