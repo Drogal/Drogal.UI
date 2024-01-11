@@ -2,7 +2,17 @@ import React from "react";
 import './Input.scss';
 import { DisplayIcon, HandleClassName } from './InputUtils';
 
-export const Input = ({
+interface InputProps {
+    icon: any, 
+    placeholder: string, 
+    onChange: void, 
+    value: any, 
+    displayError: boolean, 
+    errorMessage: string, 
+    className: string
+}
+
+export const Input: React.FC<InputProps> = ({ 
     icon, 
     placeholder, 
     onChange, 

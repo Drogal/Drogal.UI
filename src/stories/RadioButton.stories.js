@@ -11,8 +11,8 @@ export default {
 
 export const Default = {
   args: {    
-    title: "Radio Button",     
+    label: "Radio Button",     
     displayError: false, 
-    errorMessage: "*Campo obrigatório"
+    errorMessage: "*Campo obrigatório",    
   },
 };

@@ -12,7 +12,7 @@ export default {
 export const TypeDefault = {
   args: {    
 
-     children: <div></div>
+    
   },
 };
 

@@ -1,7 +1,17 @@
 import React from "react";
-import './Input.scss'
+import './Input.scss';
+import { HandleTextAreaClassName } from './InputUtils';
 
-export const TextArea = ({
+interface TextAreaProps {
+    placeholder, 
+    onChange, 
+    value, 
+    displayError, 
+    errorMessage,
+    className
+}
+
+export const TextArea: React.FC<TextAreaProps> = ({ 
     placeholder, 
     onChange, 
     value, 
@@ -15,7 +25,7 @@ export const TextArea = ({
                 onChange={onChange}
                 value={value}
                 placeholder={placeholder}
-                className={`drogal-ui-input drogal-ui-area-detail ${ (displayError) ? "drogal-ui-area-error" : "" } ${className}`}
+                className={HandleTextAreaClassName(displayError, className)}
             />
             {displayError && <div className="input-error-message">{errorMessage}</div>}
         </div>        
