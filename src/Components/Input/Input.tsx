@@ -5,7 +5,7 @@ import { DisplayIcon, HandleClassName } from './InputUtils';
 interface InputProps {
     icon: any, 
     placeholder: string, 
-    onChange: void, 
+    onChange: () => void, 
     value: any, 
     displayError: boolean, 
     errorMessage: string, 

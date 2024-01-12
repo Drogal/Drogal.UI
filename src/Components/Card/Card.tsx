@@ -4,7 +4,7 @@ import './Card.scss'
 interface CardProps {
     children: ReactNode,
     className: string, 
-    style: string
+    style?: React.CSSProperties
 }
 
 export const Card: React.FC<CardProps> = ({ 

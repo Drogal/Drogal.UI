@@ -3,7 +3,7 @@ import './RadioButton.scss'
 
 interface RadioButtonProps {
     label: string, 
-    onChange: void, 
+    onChange: () => void, 
     value: any, 
     displayError: boolean, 
     errorMessage: string
